@@ -251,6 +251,24 @@ def get_prescale_set(runnr,parser):
     
     return []
 
+def get_L1Summary(runnr,parser):
+    url=wbmbase_url+"/cmsdb/servlet/L1Summary?RUN=%s" % runnr
+    tables=parser.parse_url_tables(url)
+
+    count=0
+    while len(tables)<=1 and count<=10:
+        from time import sleep
+        sleep(3)
+        tables=parser.parse_url_tables(url)
+        count+=1
+
+    for table in tables :
+      for cell in table :
+        if "L1Summary Algorithm Triggers" in cell :
+          return table
+
+    return []
+
 def get_prescale_set_with_mask(runnr,parser):
     url=wbmbase_url+"/cmsdb/servlet/PrescaleSets?RUN=%s" % runnr
     tables,format=parser.parse_url_tables_format(url)
