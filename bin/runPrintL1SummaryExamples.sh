@@ -17,6 +17,8 @@ set -x
 # 10    : Final Prescale
 ## WARNING : For older runs the column structure is different than newer ones. Example : index=5 points to "Pre-DT Counts After Prescale" for run 326238. The same index points to "Pre-DT RMS Rate, Hz After Prescale" for run 263322.
 
+mkdir -p test/
+
 ## example 1
 # print all L1 summary columns for given comma separated list of paths
 ./printL1Summary.py --run 326262 --pathnames L1_MinimumBiasHF1_AND_BptxAND,L1_SingleJet16_BptxAND,L1_SingleJet44_BptxAND &> test/example1.log
