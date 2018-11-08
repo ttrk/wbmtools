@@ -93,3 +93,11 @@ Once you have finished, you can return to the normal python env but doing the fo
 deactivate #puts us back to the normal python env, 
 ```    
 
+### Printing L1 summary
+
+The script `runPrintL1SummaryExamples.sh` under bin/ makes several example calls to `printL1Summary.py`. Simply run the script via
+
+  ```bash
+  cd bin/
+  ./runPrintL1SummaryExamples.sh
+  ```
