@@ -1,4 +1,4 @@
-## PreNote (instructions for desktop machine)
+## Pre-Note (Instructions For Desktop Machine)
 
 Sam Harper's instructions below use virtualenv which is probably what you want to do when you work on machines where you dont have permission to modify central packages (e.g. lxplus) . The tools can also be run on desktop machines where you probably have permission to change packages and therefore do not need to use virtualenv. Generic instructions for desktop machines
 
@@ -26,7 +26,7 @@ See [here](http://linux.web.cern.ch/linux/docs/kerberos-access.shtml) for instru
   export PYTHONPATH=$PYTHONPATH:<full_path_to_wbmtools>  # assuming env var name is PYTHONPATH
   ```
 
-The tools can now be used on a desktop machine.
+The tools can now be used on a desktop machine. See instructions below for lxplus machines.
 
 # wbmtools
 
