@@ -13,7 +13,7 @@ parser.add_argument('--colIndex',required=False,help='index of column on WBM\'s 
 parser.add_argument('--outcsv',required=False,help='optional csv output file')
 args = parser.parse_args()
 
-#columnTitles = ["Bit",  index = 1
+#columnTitles = ["Bit",
 #                "Name",
 #                "Pre-DT Counts Before Prescale",
 #                "Pre-DT Rate Hz Before Prescale",
@@ -58,8 +58,8 @@ l1Table = wbmutil.get_L1Summary(run,wbmparser)
 # 2nd row contains the column titles
 columnTitles=[]
 i=0
-while i < len(l1Table[1]) - 1 : # skip the very last column
-  columnTitles.append(l1Table[1][i])
+while i < len(l1Table[0]) - 1 : # skip the very last column
+  columnTitles.append(l1Table[0][i])
   i += 1
 
 # print selected columns

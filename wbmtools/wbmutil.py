@@ -251,8 +251,14 @@ def get_prescale_set(runnr,parser):
     
     return []
 
-def get_L1Summary(runnr,parser):
-    url=wbmbase_url+"/cmsdb/servlet/L1Summary?RUN=%s" % runnr
+def get_triggerSummary(runnr,parser,trigType):
+    if trigType == "L1" :
+      url=wbmbase_url+"/cmsdb/servlet/L1Summary?RUN=%s" % runnr
+    elif trigType == "HLT" :
+      url=wbmbase_url+"/cmsdb/servlet/HLTSummary?RUN=%s" % runnr
+    else :
+      return []
+
     tables=parser.parse_url_tables(url)
 
     count=0
@@ -264,10 +270,18 @@ def get_L1Summary(runnr,parser):
 
     for table in tables :
       for cell in table :
-        if "L1Summary Algorithm Triggers" in cell :
-          return table
+        if trigType == "L1" and "L1Summary Algorithm Triggers" in cell :
+          return table[1:len(table)]
+        elif trigType == "HLT" and "HLTSummary Trigger Paths" in cell :
+          return table[1:len(table)]
 
     return []
+
+def get_L1Summary(runnr,parser):
+    return get_triggerSummary(runnr,parser,"L1")
+
+def get_HLTSummary(runnr,parser):
+    return get_triggerSummary(runnr,parser,"HLT")
 
 def get_prescale_set_with_mask(runnr,parser):
     url=wbmbase_url+"/cmsdb/servlet/PrescaleSets?RUN=%s" % runnr
