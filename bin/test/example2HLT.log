@@ -1,0 +1,8 @@
+run = 263322
+pathnames = ['HLT_HIPuAK4CaloJet40_Eta5p1_v1', 'HLT_HIPuAK4CaloJet60_Eta5p1_v1', 'HLT_HIPuAK4CaloJet80_Eta5p1_v1']
+colIndices = [2, 4, 5, 6, 7]
+outputCSV = None
+Name, L1Pass, PSPass, PAccept, RateHz
+### HLTSummary Trigger Paths ###
+HLT_HIPuAK4CaloJet60_Eta5p1_v1, 17430218, 1595083, 138158, 4.79
+HLT_HIPuAK4CaloJet80_Eta5p1_v1, 5703655, 1216547, 121515, 4.21

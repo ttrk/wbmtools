@@ -132,3 +132,11 @@ The script `runPrintL1SummaryExamples.sh` under bin/ makes several example calls
   cd bin/
   ./runPrintL1SummaryExamples.sh
   ```
+### Printing HLT summary
+
+The script `runPrintHLTSummaryExamples.sh` under bin/ makes several example calls to [printHLTSummary.py](bin/printHLTSummary.py). Simply run the script via
+
+  ```bash
+  cd bin/
+  ./runPrintHLTSummaryExamples.sh
+  ```

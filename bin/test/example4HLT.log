@@ -1,0 +1,27 @@
+Path names are given in a text file
+run = 326262
+pathnames = ['HLT_HIDmesonPPTrackingGlobal_Dpt15_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt20_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt30_v1', 'HLT_HIDoubleEle10GsfMass50_v1', 'HLT_HIDoubleEle10Gsf_v1', 'HLT_HIDsPPTrackingGlobal_Dpt20_v1', 'HLT_HIDsPPTrackingGlobal_Dpt30_v1', 'HLT_HIEle10Gsf_v1', 'HLT_HIEle15Ele10GsfMass50_v1', 'HLT_HIFullTracks2018_HighPt18_v1', 'HLT_HIFullTracks2018_HighPt24_v1', 'HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton40_v1', 'HLT_HIIslandPhoton10_Eta3p1_v1', 'HLT_HIIslandPhoton40_Eta3p1_v1', 'HLT_HIPuAK4CaloJet100Eta5p1_v1', 'HLT_HIPuAK4CaloJet100Fwd_v1', 'HLT_HIPuAK4CaloJet40Eta5p1_v1', 'HLT_HIPuAK4CaloJet40Fwd_v1', 'HLT_HIRandom_v1']
+colIndices = [1, 2, 3, 4, 5, 6, 7]
+outputCSV = test/example4HLT.csv
+n, Name, nLS, L1Pass, PSPass, PAccept, RateHz
+### HLTSummary Trigger Paths ###
+38, HLT_HIDmesonPPTrackingGlobal_Dpt15_v1, 543 (553), 697563, 684, 0, 0.00
+39, HLT_HIDmesonPPTrackingGlobal_Dpt20_v1, 543 (553), 697563, 684, 0, 0.00
+40, HLT_HIDmesonPPTrackingGlobal_Dpt30_v1, 543 (553), 697563, 684, 0, 0.00
+44, HLT_HIDoubleEle10GsfMass50_v1, 543 (553), 98643, 98643, 0, 0.00
+45, HLT_HIDoubleEle10Gsf_v1, 543 (553), 98643, 98643, 0, 0.00
+48, HLT_HIDsPPTrackingGlobal_Dpt20_v1, 543 (553), 697563, 684, 0, 0.00
+49, HLT_HIDsPPTrackingGlobal_Dpt30_v1, 543 (553), 697563, 684, 0, 0.00
+57, HLT_HIEle10Gsf_v1, 543 (553), 1443759, 110974, 0, 0.00
+58, HLT_HIEle15Ele10GsfMass50_v1, 543 (553), 98643, 98643, 0, 0.00
+73, HLT_HIFullTracks2018_HighPt18_v1, 543 (553), 697563, 684, 0, 0.00
+74, HLT_HIFullTracks2018_HighPt24_v1, 543 (553), 697563, 684, 0, 0.00
+95, HLT_HIGEDPhoton10_v1, 543 (553), 1443759, 365, 60, 0.00
+113, HLT_HIGEDPhoton40_v1, 543 (553), 34053, 34053, 2106, 0.17
+127, HLT_HIIslandPhoton10_Eta3p1_v1, 543 (553), 1443759, 206, 51, 0.00
+139, HLT_HIIslandPhoton40_Eta3p1_v1, 543 (553), 34053, 34053, 9923, 0.78
+268, HLT_HIPuAK4CaloJet100Eta5p1_v1, 543 (553), 168611, 168611, 1186, 0.09
+269, HLT_HIPuAK4CaloJet100Fwd_v1, 543 (553), 80355, 80355, 68, 0.01
+276, HLT_HIPuAK4CaloJet40Eta5p1_v1, 543 (553), 552945, 159, 18, 0.00
+277, HLT_HIPuAK4CaloJet40Fwd_v1, 543 (553), 216062, 30716, 1383, 0.11
+293, HLT_HIRandom_v1, 543 (553), 16916555, 496733, 496733, 39.24
