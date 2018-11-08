@@ -23,7 +23,7 @@ See [here](http://linux.web.cern.ch/linux/docs/kerberos-access.shtml) for instru
   export REQUESTS_CA_BUNDLE=<destination_path_for_my_ca>
   # check the name of python env var on your machine, it might be PYTHONPATH, PYTHON27PATH, or something else depending on the setup
   printenv | grep "PYTHON"
-  export PYTHONPATH=$PYTHONPATH:<path_to_wbmtools>  # assuming env var name is PYTHONPATH
+  export PYTHONPATH=$PYTHONPATH:<full_path_to_wbmtools>  # assuming env var name is PYTHONPATH
   ```
 
 The tools can now be used on a desktop machine.
@@ -94,7 +94,7 @@ One last thing, we need the cern CA bundle to verify the WBM certificate. This i
 Now once we have an area setup, an example workflow is as follows (note you need an active kerberos ticket)
     
     source wbmtools/virenv/bin/activate #we now go into our special python env
-    export PYTHON27PATH=$PYTHON27PATH:wbmtools 
+    export PYTHON27PATH=$PYTHON27PATH:<full_path_to_wbmtools>
     export REQUESTS_CA_BUNDLE=$PWD/wbmtools/ca-bundle.crt #if you've copied the ca-bundle.crt here
     ./wbmtools/bin/printColumnLumis.py 319854 319908 319909 319910 319912
     
