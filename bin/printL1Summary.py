@@ -70,6 +70,8 @@ while i < len(colIndices) :
   i += 1
 print strCols
 
+print "### L1Summary Algorithm Triggers ###"
+
 import csv
 if outputCSV != None :
   fout = open(outputCSV, mode='w')
@@ -80,15 +82,6 @@ if outputCSV != None :
   writer = csv.DictWriter(fout, fieldnames=colTitlesCSV)
 
   writer.writeheader()
-#  writer.writerow({'emp_name': 'John Smith', 'dept': 'Accounting', 'birth_month': 'November'})
-#  writer.writerow({'emp_name': 'Erica Meyers', 'dept': 'IT', 'birth_month': 'March'})
-
-#  fout = open(outputCSV, mode='w')
-#  foutwriter = csv.writer(fout, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
-#  foutwriter.writerow(['John Smith', 'Accounting', 'November'])
-#  foutwriter.writerow(['Erica Meyers', 'IT', 'March'])
-#  fout.close()
 
 for pathname in pathnames :
   for l1row in l1Table :

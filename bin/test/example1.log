@@ -4,6 +4,7 @@ pathnames = ['L1_MinimumBiasHF1_AND_BptxAND', 'L1_SingleJet16_BptxAND', 'L1_Sing
 colIndices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 outputCSV = None
 Bit, Name, Pre-DT Counts Before Prescale, Pre-DT Rate, Hz Before Prescale, Pre-DT Counts After Prescale, Pre-DT Rate, Hz After Prescale, Post-DT Counts From HLT, Post-DT Rate, Hz From HLT, Initial Prescale, Final Prescale
+### L1Summary Algorithm Triggers ###
 154, L1_MinimumBiasHF1_AND_BptxAND, 1502531, 116.77, 1501549, 116.69, 1446212, 112.19, 0, 1
 260, L1_SingleJet16_BptxAND, 2408934, 187.21, 0, 0.00, 0, 0.00, 0, 0
 266, L1_SingleJet44_BptxAND, 319872, 24.86, 319861, 24.86, 317114, 24.60, 0, 1

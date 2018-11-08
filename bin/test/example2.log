@@ -3,6 +3,7 @@ pathnames = ['L1_ZeroBias', 'L1_MinimumBiasHF1_AND', 'L1_MinimumBiasHF2_AND']
 colIndices = [2, 5, 6]
 outputCSV = None
 Name, Pre-DT RMS Rate, Hz After Prescale, Post-DT Counts From HLT
+### L1Summary Algorithm Triggers ###
 L1_ZeroBias, 99.84, 2843789
 L1_MinimumBiasHF1_AND, 6.49, 172080
 L1_MinimumBiasHF2_AND, 518.23, 14292232

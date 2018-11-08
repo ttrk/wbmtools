@@ -4,6 +4,7 @@ pathnames = ['L1_ZeroBias', 'L1_ZeroBias_copy', 'L1_MinimumBiasHF1_AND', 'L1_Min
 colIndices = [1, 2, 3, 4, 5, 6]
 outputCSV = test/example4.csv
 Bit, Name, Pre-DT Counts Before Prescale, Pre-DT Rate, Hz Before Prescale, Pre-DT Counts After Prescale, Pre-DT Rate, Hz After Prescale
+### L1Summary Algorithm Triggers ###
 100, L1_ZeroBias, 1144955112, 88,979.16, 759597, 59.03
 101, L1_ZeroBias_copy, 1144955112, 88,979.16, 0, 0.00
 152, L1_MinimumBiasHF1_AND, 96950219, 7,534.40, 0, 0.00
