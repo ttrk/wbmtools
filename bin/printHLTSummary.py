@@ -7,7 +7,7 @@ wbmparser=WBMParser()
 
 import argparse
 parser = argparse.ArgumentParser(description='prints HLT Summary in a given run')
-parser.add_argument('--run',required=True,help='326238')
+parser.add_argument('--run',required=True,help='326238 or 326238:107:503 where 230 and 1050 are min and max lumi sections')
 parser.add_argument('--pathnames',required=True,help='HLT_HIPuAK4CaloJet40Eta5p1_v1,HLT_HIGEDPhoton10_v1,HLT_HIIslandPhoton10_v1\npaths.txt where each line in the file is an HLT path')
 parser.add_argument('--colIndex',required=False,help='index of column on WBM\'s HLTSummary table')
 parser.add_argument('--outcsv',required=False,help='optional csv output file')
@@ -24,7 +24,14 @@ args = parser.parse_args()
 #                "PReject",
 #                "L1 Prerequisite"]
 
-run = args.run
+run_lumis = args.run.split(":")
+run = run_lumis[0]
+minLS=0
+maxLS=-1
+if len(run_lumis) == 3 :
+  minLS=run_lumis[1]
+  maxLS=run_lumis[2]
+
 pathnames = args.pathnames.split(",")
 if len(pathnames) == 1 and pathnames[0].endswith(".txt") :
   print "Path names are given in a text file"
@@ -49,11 +56,13 @@ else :
 outputCSV = args.outcsv
 
 print "run =",run
+print "minLS =",minLS
+print "maxLS =",maxLS
 print "pathnames =",pathnames
 print "colIndices =",colIndices
 print "outputCSV =",outputCSV
 
-hltTable = wbmutil.get_HLTSummary(run,wbmparser)
+hltTable = wbmutil.get_HLTSummary(run,minLS,maxLS,wbmparser)
 
 # 2nd row contains the column titles
 columnTitles=[]

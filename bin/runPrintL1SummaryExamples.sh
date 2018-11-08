@@ -37,3 +37,10 @@ mkdir -p test/
 # print first 6 columns from L1Summary table
 # save the output to a csv file
 ./printL1Summary.py --run 326262 --pathnames test/L1paths.txt --colIndex 1,2,3,4,5,6 --outcsv test/example4.csv &> test/example4.log
+
+## example 5
+# L1 paths to search are in a txt file
+# print first 6 columns from L1Summary table
+# save the output to a csv file
+# The two numbers following run number are min and max lumi sections
+./printL1Summary.py --run 326262:250:540 --pathnames test/L1paths.txt --colIndex 1,2,3,4,5,6 --outcsv test/example5.csv &> test/example5.log

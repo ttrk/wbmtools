@@ -1,0 +1,29 @@
+Path names are given in a text file
+run = 326262
+minLS = 105
+maxLS = 479
+pathnames = ['HLT_HIDmesonPPTrackingGlobal_Dpt15_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt20_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt30_v1', 'HLT_HIDoubleEle10GsfMass50_v1', 'HLT_HIDoubleEle10Gsf_v1', 'HLT_HIDsPPTrackingGlobal_Dpt20_v1', 'HLT_HIDsPPTrackingGlobal_Dpt30_v1', 'HLT_HIEle10Gsf_v1', 'HLT_HIEle15Ele10GsfMass50_v1', 'HLT_HIFullTracks2018_HighPt18_v1', 'HLT_HIFullTracks2018_HighPt24_v1', 'HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton40_v1', 'HLT_HIIslandPhoton10_Eta3p1_v1', 'HLT_HIIslandPhoton40_Eta3p1_v1', 'HLT_HIPuAK4CaloJet100Eta5p1_v1', 'HLT_HIPuAK4CaloJet100Fwd_v1', 'HLT_HIPuAK4CaloJet40Eta5p1_v1', 'HLT_HIPuAK4CaloJet40Fwd_v1', 'HLT_HIRandom_v1']
+colIndices = [1, 2, 3, 4, 5, 6, 7]
+outputCSV = test/example5HLT.csv
+n, Name, nLS, L1Pass, PSPass, PAccept, RateHz
+### HLTSummary Trigger Paths ###
+38, HLT_HIDmesonPPTrackingGlobal_Dpt15_v1, 375 (479), 621523, 618, 0, 0.00
+39, HLT_HIDmesonPPTrackingGlobal_Dpt20_v1, 375 (479), 621523, 618, 0, 0.00
+40, HLT_HIDmesonPPTrackingGlobal_Dpt30_v1, 375 (479), 621523, 618, 0, 0.00
+44, HLT_HIDoubleEle10GsfMass50_v1, 375 (479), 86445, 86445, 0, 0.00
+45, HLT_HIDoubleEle10Gsf_v1, 375 (479), 86445, 86445, 0, 0.00
+48, HLT_HIDsPPTrackingGlobal_Dpt20_v1, 375 (479), 621523, 618, 0, 0.00
+49, HLT_HIDsPPTrackingGlobal_Dpt30_v1, 375 (479), 621523, 618, 0, 0.00
+57, HLT_HIEle10Gsf_v1, 375 (479), 1228136, 94487, 0, 0.00
+58, HLT_HIEle15Ele10GsfMass50_v1, 375 (479), 86445, 86445, 0, 0.00
+73, HLT_HIFullTracks2018_HighPt18_v1, 375 (479), 621523, 618, 0, 0.00
+74, HLT_HIFullTracks2018_HighPt24_v1, 375 (479), 621523, 618, 0, 0.00
+95, HLT_HIGEDPhoton10_v1, 375 (479), 1228136, 307, 52, 0.01
+113, HLT_HIGEDPhoton40_v1, 375 (479), 30028, 30028, 1977, 0.23
+127, HLT_HIIslandPhoton10_Eta3p1_v1, 375 (479), 1228136, 177, 47, 0.01
+139, HLT_HIIslandPhoton40_Eta3p1_v1, 375 (479), 30028, 30028, 8851, 1.01
+268, HLT_HIPuAK4CaloJet100Eta5p1_v1, 375 (479), 149094, 149094, 1091, 0.12
+269, HLT_HIPuAK4CaloJet100Fwd_v1, 375 (479), 69717, 69717, 62, 0.01
+276, HLT_HIPuAK4CaloJet40Eta5p1_v1, 375 (479), 495303, 146, 17, 0.00
+277, HLT_HIPuAK4CaloJet40Fwd_v1, 375 (479), 188006, 26690, 1220, 0.14
+293, HLT_HIRandom_v1, 375 (479), 12481073, 342861, 342861, 39.22

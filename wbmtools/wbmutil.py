@@ -251,11 +251,16 @@ def get_prescale_set(runnr,parser):
     
     return []
 
-def get_triggerSummary(runnr,parser,trigType):
+def get_triggerSummary(runnr,minLS,maxLS,parser,trigType):
+
+    queryStr="RUN=%s" % runnr
+    if maxLS >= minLS :
+      queryStr="fromLS=%s&toLS=%s&RUN=%s" % (minLS,maxLS,runnr)
+
     if trigType == "L1" :
-      url=wbmbase_url+"/cmsdb/servlet/L1Summary?RUN=%s" % runnr
+      url=wbmbase_url+"/cmsdb/servlet/L1Summary?%s" % queryStr
     elif trigType == "HLT" :
-      url=wbmbase_url+"/cmsdb/servlet/HLTSummary?RUN=%s" % runnr
+      url=wbmbase_url+"/cmsdb/servlet/HLTSummary?%s" % queryStr
     else :
       return []
 
@@ -277,11 +282,11 @@ def get_triggerSummary(runnr,parser,trigType):
 
     return []
 
-def get_L1Summary(runnr,parser):
-    return get_triggerSummary(runnr,parser,"L1")
+def get_L1Summary(runnr,minLS,maxLS,parser):
+    return get_triggerSummary(runnr,minLS,maxLS,parser,"L1")
 
-def get_HLTSummary(runnr,parser):
-    return get_triggerSummary(runnr,parser,"HLT")
+def get_HLTSummary(runnr,minLS,maxLS,parser):
+    return get_triggerSummary(runnr,minLS,maxLS,parser,"HLT")
 
 def get_prescale_set_with_mask(runnr,parser):
     url=wbmbase_url+"/cmsdb/servlet/PrescaleSets?RUN=%s" % runnr

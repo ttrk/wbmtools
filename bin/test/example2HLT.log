@@ -1,4 +1,6 @@
 run = 263322
+minLS = 0
+maxLS = -1
 pathnames = ['HLT_HIPuAK4CaloJet40_Eta5p1_v1', 'HLT_HIPuAK4CaloJet60_Eta5p1_v1', 'HLT_HIPuAK4CaloJet80_Eta5p1_v1']
 colIndices = [2, 4, 5, 6, 7]
 outputCSV = None

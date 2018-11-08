@@ -28,11 +28,18 @@ mkdir -p test/
 
 ## example 3
 # HLT paths to search are in a txt file
-# print first 4 columns from HLTSummary table
+# print first 6 columns from HLTSummary table
 ./printHLTSummary.py --run 326238 --pathnames test/HLTpaths.txt --colIndex 1,2,3,4,5,6 &> test/example3HLT.log
 
 ## example 4
 # HLT paths to search are in a txt file
-# print first 6 columns from HLTSummary table
+# print first 7 columns from HLTSummary table
 # save the output to a csv file
 ./printHLTSummary.py --run 326262 --pathnames test/HLTpaths.txt --colIndex 1,2,3,4,5,6,7 --outcsv test/example4HLT.csv &> test/example4HLT.log
+
+## example 5
+# HLT paths to search are in a txt file
+# print first 7 columns from HLTSummary table
+# save the output to a csv file
+# The two numbers following run number are min and max lumi sections
+./printHLTSummary.py --run 326262:105:479 --pathnames test/HLTpaths.txt --colIndex 1,2,3,4,5,6,7 --outcsv test/example5HLT.csv &> test/example5HLT.log
