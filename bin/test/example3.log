@@ -1,0 +1,36 @@
+Path names are given in a text file
+run = 326238
+pathnames = ['L1_ZeroBias', 'L1_ZeroBias_copy', 'L1_MinimumBiasHF1_AND', 'L1_MinimumBiasHF2_AND', 'L1_MinimumBiasHF1_OR', 'L1_MinimumBiasHF2_OR', 'L1_MinimumBiasHF1_OR_BptxAND', 'L1_MinimumBiasHF2_OR_BptxAND', 'L1_MinimumBiasHF1_AND_BptxAND', 'L1_MinimumBiasHF2_AND_BptxAND', 'L1_MinimumBiasHF1_XOR_BptxAND', 'L1_Centrality_20_100_MinimumBiasHF1_AND_BptxAND', 'L1_Centrality_30_100_MinimumBiasHF1_AND_BptxAND', 'L1_Centrality_50_100', 'L1_Centrality_30_100', 'L1_SingleEG3_BptxAND', 'L1_SingleEG5_BptxAND', 'L1_SingleEG7_BptxAND', 'L1_SingleEG12_BptxAND', 'L1_SingleEG15_BptxAND', 'L1_SingleEG21_BptxAND', 'L1_SingleEG30_BptxAND', 'L1_SingleEG3_Centrality_30_100_BptxAND', 'L1_SingleEG7_Centrality_30_100_BptxAND', 'L1_SingleEG15_Centrality_30_100_BptxAND', 'L1_SingleEG21_Centrality_30_100_BptxAND', 'L1_SingleEG3_Centrality_50_100_BptxAND', 'L1_SingleEG7_Centrality_50_100_BptxAND', 'L1_SingleEG15_Centrality_50_100_BptxAND', 'L1_SingleEG21_Centrality_50_100_BptxAND']
+colIndices = [1, 2, 3, 4]
+outputCSV = None
+Bit, Name, Pre-DT Counts Before Prescale, Pre-DT Rate, Hz Before Prescale
+100, L1_ZeroBias, 1184591560, 89,466.25
+101, L1_ZeroBias_copy, 1184591560, 89,466.25
+152, L1_MinimumBiasHF1_AND, 104061273, 7,859.23
+162, L1_MinimumBiasHF2_AND, 1099932, 83.07
+153, L1_MinimumBiasHF1_OR, 14255678953, 1,076,659.82
+163, L1_MinimumBiasHF2_OR, 169514618, 12,802.59
+155, L1_MinimumBiasHF1_OR_BptxAND, 37175141, 2,807.65
+165, L1_MinimumBiasHF2_OR_BptxAND, 2437758, 184.11
+154, L1_MinimumBiasHF1_AND_BptxAND, 1686419, 127.37
+164, L1_MinimumBiasHF2_AND_BptxAND, 1009683, 76.26
+156, L1_MinimumBiasHF1_XOR_BptxAND, 35488722, 2,680.28
+174, L1_Centrality_20_100_MinimumBiasHF1_AND_BptxAND, 780954, 58.98
+175, L1_Centrality_30_100_MinimumBiasHF1_AND_BptxAND, 666845, 50.36
+173, L1_Centrality_50_100, 75005502, 5,664.79
+172, L1_Centrality_30_100, 75221288, 5,681.09
+344, L1_SingleEG3_BptxAND, 743843, 56.18
+345, L1_SingleEG5_BptxAND, 524520, 39.61
+346, L1_SingleEG7_BptxAND, 388443, 29.34
+347, L1_SingleEG12_BptxAND, 174388, 13.17
+348, L1_SingleEG15_BptxAND, 107043, 8.08
+349, L1_SingleEG21_BptxAND, 34955, 2.64
+350, L1_SingleEG30_BptxAND, 12348, 0.93
+363, L1_SingleEG3_Centrality_30_100_BptxAND, 298631, 22.55
+364, L1_SingleEG7_Centrality_30_100_BptxAND, 64186, 4.85
+365, L1_SingleEG15_Centrality_30_100_BptxAND, 6645, 0.50
+366, L1_SingleEG21_Centrality_30_100_BptxAND, 2723, 0.21
+368, L1_SingleEG3_Centrality_50_100_BptxAND, 109486, 8.27
+369, L1_SingleEG7_Centrality_50_100_BptxAND, 15682, 1.18
+370, L1_SingleEG15_Centrality_50_100_BptxAND, 1456, 0.11
+371, L1_SingleEG21_Centrality_50_100_BptxAND, 578, 0.04
