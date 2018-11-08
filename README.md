@@ -68,7 +68,7 @@ after that you can just update wbmtools via normal git commands
     cd -
     
     #now download and setup the package 
-    git clone git@github.com:Sam-Harper/wbmtools.git
+    git clone https://github.com/ttrk/wbmtools.git  # original repo was https://github.com/Sam-Harper/wbmtools.git
     
    
 Now we need to install
