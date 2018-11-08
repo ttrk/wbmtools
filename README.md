@@ -1,4 +1,35 @@
+## PreNote (instructions for desktop machine)
+
+Sam Harper's instructions below use virtualenv which is probably what you want to do when you work on machines where you dont have permission to modify central packages (e.g. lxplus) . The tools can also be run on desktop machines where you probably have permission to change packages and therefore do not need to use virtualenv. Generic instructions for desktop machines
+
+  ```bash
+  # You might need to install more packages depending on your python environment, check stdout for errors and missing packages
+  pip install setuptools --upgrade
+  pip install requests urllib3 pyOpenSSL --force --upgrade
+  pip install enum34 cryptography ipaddress
+  pip install -r requirements.txt
+  ```
+
+This should complete the python requirements. You also need to have an active Kerberos ticket. Initialize the ticket
+
+  ```bash
+  kinit <afsusername>@CERN.CH
+  ```
+
+See [here](http://linux.web.cern.ch/linux/docs/kerberos-access.shtml) for instructions if you do not have the Kerberos configured on your machine. Export environment variables
+
+  ```bash
+  scp <afsusername>@lxplus.cern.ch:/etc/ssl/certs/ca-bundle.crt <destination_path_for_my_ca>
+  export REQUESTS_CA_BUNDLE=<destination_path_for_my_ca>
+  # check the name of python env var on your machine, it might be PYTHONPATH, PYTHON27PATH, or something else depending on the setup
+  printenv | grep "PYTHON"
+  export PYTHONPATH=$PYTHONPATH:<path_to_wbmtools>  # assuming env var name is PYTHONPATH
+  ```
+
+The tools can now be used on a desktop machine.
+
 # wbmtools
+
 A collection of python scripts to parse information from CMS web based monitoring. Anything availible in wbm can in theory be parsed. 
 
 This uses kerberos based authenication, therefore you must have a kerberos ticket active. Additionally you will the cern certificate CA bundle to allow the WBM certificate to be validated. This is most easily obtained from lxplus, lxplus.cern.ch:/etc/ssl/certs/ca-bundle.crt
