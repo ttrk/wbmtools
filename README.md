@@ -126,7 +126,7 @@ deactivate #puts us back to the normal python env,
 
 ### Printing L1 summary
 
-The script `runPrintL1SummaryExamples.sh` under bin/ makes several example calls to `printL1Summary.py`. Simply run the script via
+The script `runPrintL1SummaryExamples.sh` under bin/ makes several example calls to [printL1Summary.py](bin/printL1Summary.py). Simply run the script via
 
   ```bash
   cd bin/
