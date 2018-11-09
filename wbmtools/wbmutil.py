@@ -271,10 +271,30 @@ def get_HLTPrescales(triggermode,parser):
 
     return []
 
+def get_LumiSummary(runnr,parser):
+
+    url=wbmbase_url+"/cmsdb/servlet/LumiSections?RUN=%s" % runnr
+
+    tables=parser.parse_url_tables(url)
+
+    count=0
+    while len(tables)<=1 and count<=10:
+        from time import sleep
+        sleep(3)
+        tables=parser.parse_url_tables(url)
+        count+=1
+
+    table2 = []
+    if len(tables) > 1 :
+      for row in tables[1] :
+        table2.append(row[0:9])
+
+    return table2
+
 def get_triggerSummary(runnr,minLS,maxLS,parser,trigType):
 
     queryStr="RUN=%s" % runnr
-    if maxLS >= minLS :
+    if int(maxLS) >= int(minLS) :
       queryStr="fromLS=%s&toLS=%s&RUN=%s" % (minLS,maxLS,runnr)
 
     if trigType == "L1" :
