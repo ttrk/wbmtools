@@ -4,7 +4,7 @@ minLS = 0
 maxLS = -1
 pathnames = ['HLT_HIDmesonPPTrackingGlobal_Dpt15_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt20_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt30_v1', 'HLT_HIDoubleEle10GsfMass50_v1', 'HLT_HIDoubleEle10Gsf_v1', 'HLT_HIDsPPTrackingGlobal_Dpt20_v1', 'HLT_HIDsPPTrackingGlobal_Dpt30_v1', 'HLT_HIEle10Gsf_v1', 'HLT_HIEle15Ele10GsfMass50_v1', 'HLT_HIFullTracks2018_HighPt18_v1', 'HLT_HIFullTracks2018_HighPt24_v1', 'HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton40_v1', 'HLT_HIIslandPhoton10_Eta3p1_v1', 'HLT_HIIslandPhoton40_Eta3p1_v1', 'HLT_HIPuAK4CaloJet100Eta5p1_v1', 'HLT_HIPuAK4CaloJet100Fwd_v1', 'HLT_HIPuAK4CaloJet40Eta5p1_v1', 'HLT_HIPuAK4CaloJet40Fwd_v1', 'HLT_HIRandom_v1']
 colIndices = [1, 2, 3, 4, 5, 6, 7]
-outputCSV = test/example4HLT.csv
+outputCSV = test_HLTSummary/example4.csv
 n, Name, nLS, L1Pass, PSPass, PAccept, RateHz
 ### HLTSummary Trigger Paths ###
 38, HLT_HIDmesonPPTrackingGlobal_Dpt15_v1, 543 (553), 697563, 684, 0, 0.00

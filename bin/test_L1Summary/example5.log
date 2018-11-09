@@ -4,7 +4,7 @@ minLS = 250
 maxLS = 540
 pathnames = ['L1_ZeroBias', 'L1_ZeroBias_copy', 'L1_MinimumBiasHF1_AND', 'L1_MinimumBiasHF2_AND', 'L1_MinimumBiasHF1_OR', 'L1_MinimumBiasHF2_OR', 'L1_MinimumBiasHF1_OR_BptxAND', 'L1_MinimumBiasHF2_OR_BptxAND', 'L1_MinimumBiasHF1_AND_BptxAND', 'L1_MinimumBiasHF2_AND_BptxAND', 'L1_MinimumBiasHF1_XOR_BptxAND', 'L1_Centrality_20_100_MinimumBiasHF1_AND_BptxAND', 'L1_Centrality_30_100_MinimumBiasHF1_AND_BptxAND', 'L1_Centrality_50_100', 'L1_Centrality_30_100', 'L1_SingleEG3_BptxAND', 'L1_SingleEG5_BptxAND', 'L1_SingleEG7_BptxAND', 'L1_SingleEG12_BptxAND', 'L1_SingleEG15_BptxAND', 'L1_SingleEG21_BptxAND', 'L1_SingleEG30_BptxAND', 'L1_SingleEG3_Centrality_30_100_BptxAND', 'L1_SingleEG7_Centrality_30_100_BptxAND', 'L1_SingleEG15_Centrality_30_100_BptxAND', 'L1_SingleEG21_Centrality_30_100_BptxAND', 'L1_SingleEG3_Centrality_50_100_BptxAND', 'L1_SingleEG7_Centrality_50_100_BptxAND', 'L1_SingleEG15_Centrality_50_100_BptxAND', 'L1_SingleEG21_Centrality_50_100_BptxAND']
 colIndices = [1, 2, 3, 4, 5, 6]
-outputCSV = test/example5.csv
+outputCSV = test_L1Summary/example5.csv
 Bit, Name, Pre-DT Counts Before Prescale, Pre-DT Rate, Hz Before Prescale, Pre-DT Counts After Prescale, Pre-DT Rate, Hz After Prescale
 ### L1Summary Algorithm Triggers ###
 100, L1_ZeroBias, 610271232, 89,964.02, 407109, 60.01
