@@ -140,3 +140,12 @@ The script `runPrintHLTSummaryExamples.sh` under bin/ makes several example call
   cd bin/
   ./runPrintHLTSummaryExamples.sh
   ```
+
+### Printing HLT prescales
+
+The script `runPrintHLTPrescalesExamples.sh` under bin/ makes several example calls to [printHLTPrescales.py](bin/printHLTPrescales.py). Simply run the script via
+
+  ```bash
+  cd bin/
+  ./runPrintHLTPrescalesExamples.sh
+  ```
