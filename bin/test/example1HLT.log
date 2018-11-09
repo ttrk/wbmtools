@@ -3,7 +3,7 @@ run = 326262
 minLS = 0
 maxLS = -1
 pathnames = ['HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton20_v1', 'HLT_HIGEDPhoton30_v1']
-colIndices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+colIndices = []
 outputCSV = None
 n, Name, nLS, L1Pass, PSPass, PAccept, RateHz, PExcept, PReject, L1 Prerequisite
 ### HLTSummary Trigger Paths ###

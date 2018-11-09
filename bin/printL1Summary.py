@@ -42,7 +42,6 @@ if len(pathnames) == 1 and pathnames[0].endswith(".txt") :
 colIndices = []
 if args.colIndex == None :
   print "No column indices are given. All columns will be shown by default."
-  colIndices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 else :
   tmpList = args.colIndex.split(",")
   for tmp in tmpList :
@@ -64,7 +63,9 @@ print "outputCSV =",outputCSV
 
 l1Table = wbmutil.get_L1Summary(run,minLS,maxLS,wbmparser)
 
-# 2nd row contains the column titles
+if args.colIndex == None :
+  colIndices = range(1, len(l1Table[0]))
+
 columnTitles=[]
 i=0
 while i < len(l1Table[0]) - 1 : # skip the very last column
