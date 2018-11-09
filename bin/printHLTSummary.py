@@ -29,8 +29,8 @@ run = run_lumis[0]
 minLS=0
 maxLS=-1
 if len(run_lumis) == 3 :
-  minLS=run_lumis[1]
-  maxLS=run_lumis[2]
+  minLS=int(run_lumis[1])
+  maxLS=int(run_lumis[2])
 
 pathnames = args.pathnames.split(",")
 if len(pathnames) == 1 and pathnames[0].endswith(".txt") :
