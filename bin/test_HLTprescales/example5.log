@@ -1,0 +1,45 @@
+Path names are given in a text file
+No column indices are given. All columns will be shown by default.
+triggerMode = l1_hlt_collisionshi2018/v34
+pathnames = ['HLT_HIDmesonPPTrackingGlobal_Dpt15_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt20_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt30_v1', 'HLT_HIDoubleEle10GsfMass50_v1', 'HLT_HIDoubleEle10Gsf_v1', 'HLT_HIDsPPTrackingGlobal_Dpt20_v1', 'HLT_HIDsPPTrackingGlobal_Dpt30_v1', 'HLT_HIEle10Gsf_v1', 'HLT_HIEle15Ele10GsfMass50_v1', 'HLT_HIFullTracks2018_HighPt18_v1', 'HLT_HIFullTracks2018_HighPt24_v1', 'HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton40_v1', 'HLT_HIIslandPhoton10_Eta3p1_v1', 'HLT_HIIslandPhoton40_Eta3p1_v1', 'HLT_HIPuAK4CaloJet100Eta5p1_v1', 'HLT_HIPuAK4CaloJet100Fwd_v1', 'HLT_HIPuAK4CaloJet40Eta5p1_v1', 'HLT_HIPuAK4CaloJet40Fwd_v1', 'HLT_HIRandom_v1']
+colIndices = []
+outputCSV = test_HLTprescales/example5.csv
+n, HLT Path Name, Index 0
+  Emergency, Index 1
+ HI60kHz, Index 2
+ HI50kHz, Index 3
+ HI40kHz, Index 4
+ HI30kHz, Index 5
+ HI26kHz, Index 6
+ HI23kHz, Index 7
+ HI20kHz, Index 8
+ HI16kHz, Index 9
+ HI13kHz, Index 10
+ HI10kHz, Index 11
+ HI8kHz, Index 12
+ HI7kHz, Index 13
+ HI6.5kHz, Index 14
+ HI50b, Index 15
+ HI50b Safety, Index 16
+ HI50b Tracking, L1 Prerequisite
+### HLT Pre-scale Sets Details ###
+51, HLT_HIDmesonPPTrackingGlobal_Dpt15_v1, 0, 5, 4, 9, 7, 6, 5, 7, 4, 2, 1, 1, 1, 1, 0, 0, 5, L1_SingleJet24_BptxAND
+52, HLT_HIDmesonPPTrackingGlobal_Dpt20_v1, 0, 5, 4, 9, 7, 6, 5, 7, 4, 2, 1, 1, 1, 1, 0, 0, 5, L1_SingleJet24_BptxAND
+53, HLT_HIDmesonPPTrackingGlobal_Dpt30_v1, 0, 5, 4, 9, 7, 6, 5, 7, 4, 2, 1, 1, 1, 1, 0, 0, 5, L1_SingleJet24_BptxAND
+57, HLT_HIDoubleEle10GsfMass50_v1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, L1_SingleEG15_BptxAND
+58, HLT_HIDoubleEle10Gsf_v1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, L1_SingleEG15_BptxAND
+61, HLT_HIDsPPTrackingGlobal_Dpt20_v1, 0, 5, 4, 9, 7, 6, 5, 7, 4, 2, 1, 1, 1, 1, 0, 0, 5, L1_SingleJet24_BptxAND
+62, HLT_HIDsPPTrackingGlobal_Dpt30_v1, 0, 5, 4, 9, 7, 6, 5, 7, 4, 2, 1, 1, 1, 1, 0, 0, 5, L1_SingleJet24_BptxAND
+70, HLT_HIEle10Gsf_v1, 0, 11, 11, 13, 11, 7, 7, 13, 41, 31, 23, 19, 19, 19, 41, 41, 41, L1_MinimumBiasHF1_AND_BptxAND
+71, HLT_HIEle15Ele10GsfMass50_v1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, L1_SingleEG15_BptxAND
+86, HLT_HIFullTracks2018_HighPt18_v1, 0, 5, 4, 9, 7, 6, 5, 14, 12, 12, 11, 11, 11, 11, 0, 0, 5, L1_SingleJet24_BptxAND
+87, HLT_HIFullTracks2018_HighPt24_v1, 0, 5, 4, 9, 7, 6, 5, 7, 4, 2, 1, 1, 1, 1, 0, 0, 5, L1_SingleJet24_BptxAND
+108, HLT_HIGEDPhoton10_v1, 0, 313, 3169, 3803, 5701, 2473, 2179, 3803, 3041, 2467, 1901, 1523, 1523, 1523, 3041, 3041, 3041, L1_MinimumBiasHF1_AND_BptxAND
+126, HLT_HIGEDPhoton40_v1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, L1_SingleEG21_BptxAND
+140, HLT_HIIslandPhoton10_Eta3p1_v1, 0, 503, 5501, 6599, 9901, 4283, 3793, 6599, 5279, 4289, 3299, 2633, 2633, 2633, 5279, 5279, 5279, L1_MinimumBiasHF1_AND_BptxAND
+152, HLT_HIIslandPhoton40_Eta3p1_v1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, L1_SingleEG21_BptxAND
+281, HLT_HIPuAK4CaloJet100Eta5p1_v1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, L1_SingleJet60_BptxAND
+282, HLT_HIPuAK4CaloJet100Fwd_v1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, L1_SingleJet56_FWD_BptxAND
+289, HLT_HIPuAK4CaloJet40Eta5p1_v1, 0, 13, 349, 2141, 4817, 4177, 3691, 3209, 2579, 2087, 1607, 1283, 1283, 1283, 2579, 2579, 2579, L1_SingleJet28_BptxAND
+290, HLT_HIPuAK4CaloJet40Fwd_v1, 0, 17, 29, 23, 7, 7, 7, 7, 61, 47, 37, 29, 29, 29, 61, 61, 61, L1_SingleJet28_FWD_BptxAND
+306, HLT_HIRandom_v1, 0, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 

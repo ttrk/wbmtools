@@ -251,6 +251,26 @@ def get_prescale_set(runnr,parser):
     
     return []
 
+def get_HLTPrescales(triggermode,parser):
+
+    url=wbmbase_url+"/cmsdb/servlet/TriggerMode?KEY=%s" % triggermode
+
+    tables=parser.parse_url_tables(url)
+
+    count=0
+    while len(tables)<=1 and count<=10:
+        from time import sleep
+        sleep(3)
+        tables=parser.parse_url_tables(url)
+        count+=1
+
+    for table in tables :
+      for row in table :
+        if "HLT Path Name" in row[1] :
+          return table
+
+    return []
+
 def get_triggerSummary(runnr,minLS,maxLS,parser,trigType):
 
     queryStr="RUN=%s" % runnr

@@ -1,0 +1,17 @@
+No column indices are given. All columns will be shown by default.
+triggerMode = l1_hlt_circulatinghi2018/v12
+pathnames = ['HLT_Physics_v7', 'HLT_Random_v3', 'HLT_ZeroBias_v6']
+colIndices = []
+outputCSV = None
+n, HLT Path Name, Index 0
+  Emergency, Index 1
+ Circulating, Index 2
+ Circulating+HighRandom, Index 3
+ NoCalo, Index 4
+ NoMuon, Index 5
+ NoLaserMon, Index 6
+ 1BX, L1 Prerequisite
+### HLT Pre-scale Sets Details ###
+33, HLT_Physics_v7, 0, 100, 100, 100, 100, 100, 100, 
+34, HLT_Random_v3, 60, 60, 8, 60, 60, 60, 60, 
+35, HLT_ZeroBias_v6, 100, 100, 100, 100, 100, 100, 1, L1_ZeroBias

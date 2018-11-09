@@ -1,0 +1,12 @@
+triggerMode = l1_hlt_HI_Collisions/v77
+pathnames = ['HLT_HIPuAK4CaloJet40_Eta5p1_v1', 'HLT_HIPuAK4CaloJet60_Eta5p1_v1', 'HLT_HIPuAK4CaloJet80_Eta5p1_v1']
+colIndices = [2, 4, 5, 6, 7]
+outputCSV = None
+HLT Path Name, Index 1
+ 30kHz, Index 2
+ 20kHz, Index 3
+ 16kHz, Index 4
+ 12kHz
+### HLT Pre-scale Sets Details ###
+HLT_HIPuAK4CaloJet60_Eta5p1_v1, 2, 7, 7, 11
+HLT_HIPuAK4CaloJet80_Eta5p1_v1, 11, 7, 7, 5
