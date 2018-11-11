@@ -1,0 +1,6 @@
+Run,326398
+LS,Presc,Time,Inst,Deliv,Live,Deadtime,Beam 1,Beam 2
+41,16,05:27:30,116.7,18.5,16.8,0.9,65.8,65.1
+137,16,06:04:48,110.9,285.0,280.7,0.9,62.2,61.5
+Total Time [sec],Total Delivered Lumi [inv mb],Total Live Lumi [inv mb],Total Collisions (from deliv lumi),Ave Collision Rate [Hz] (from deliv lumi),Total Collisions (from live lumi),Ave Collision Rate [Hz] (from live lumi)
+2262,269.4,266.7,2063604.0,912.2917771883289,2042922.0,903.1485411140584

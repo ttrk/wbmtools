@@ -286,8 +286,14 @@ def get_LumiSummary(runnr,parser):
 
     table2 = []
     if len(tables) > 1 :
-      for row in tables[1] :
-        table2.append(row[0:9])
+      # First row of the WBM table is messed up. Fix it
+      rowTmp = tables[1][0]
+      table2.append(rowTmp[0:9])  # column titles
+      table2.append(rowTmp[41:50])  # LS = 1
+      iRow = 1
+      while iRow < len(tables[1]) :
+        table2.append(tables[1][iRow])
+        iRow += 1
 
     return table2
 

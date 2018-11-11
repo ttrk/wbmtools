@@ -1,0 +1,15 @@
+run = 326381
+minLS = 57
+maxLS = 111
+outputCSV = None
+LS, Presc, Time, Inst, Deliv, Live, Deadtime, Beam 1, Beam 2
+### Lumi Sections ###
+57, 14, 20:22:28, 189.1, 33.7, 30.3, 0.9, 70.6, 70.7
+111, -1, 20:43:27, 169.8, 251.6, 229.8, 100.0, 68.3, 68.3
+Total Time [sec] = 1282
+Total Delivered Lumi [inv mb] = 222.1
+Total Live Lumi [inv mb] = 203.7
+Total Collisions (based on delivered lumi) = 1701286.0
+Ave Collision Rate [Hz] (based on delivered lumi) = 1327.05616225
+Total Collisions (based on live lumi) = 1560342.0
+Ave Collision Rate [Hz] (based on live lumi) = 1217.11544462

@@ -149,3 +149,12 @@ The script `runPrintHLTPrescalesExamples.sh` under bin/ makes several example ca
   cd bin/
   ./runPrintHLTPrescalesExamples.sh
   ```
+
+### Printing Lumi summary
+
+The script `runPrintLumiSummaryExamples.sh` under bin/ makes several example calls to [printLumiSummary.py](bin/printLumiSummary.py). Simply run the script via
+
+  ```bash
+  cd bin/
+  ./runPrintLumiSummaryExamples.sh
+  ```
