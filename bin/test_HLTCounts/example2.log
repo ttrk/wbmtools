@@ -1,0 +1,15 @@
+lumiRanges =
+262640, 87, 102
+263293, 1, 373
+263322, 64, 1238
+pathnames = ['HLT_HIPuAK4CaloJet40_Eta5p1_v1', 'HLT_HIPuAK4CaloJet60_Eta5p1_v1', 'HLT_HIPuAK4CaloJet80_Eta5p1_v1']
+colIndices = [1, 4]
+outputCSV = None
+processing Run 262640, [87, 102]
+processing Run 263293, [1, 373]
+processing Run 263322, [64, 1238]
+### HLT Trigger Counts ###
+Name, PAccept
+HLT_HIPuAK4CaloJet40_Eta5p1_v1, 827
+HLT_HIPuAK4CaloJet60_Eta5p1_v1, 240878
+HLT_HIPuAK4CaloJet80_Eta5p1_v1, 211323

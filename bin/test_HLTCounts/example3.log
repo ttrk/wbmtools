@@ -1,0 +1,36 @@
+Path names are given in a text file
+No column indices are given. All columns will be shown by default.
+lumiRanges =
+326500, 1, 35
+326501, 1, 294
+326502, 1, 50
+326503, 1, 32
+pathnames = ['HLT_HIDmesonPPTrackingGlobal_Dpt15_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt20_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt30_v1', 'HLT_HIDoubleEle10GsfMass50_v1', 'HLT_HIDoubleEle10Gsf_v1', 'HLT_HIDsPPTrackingGlobal_Dpt20_v1', 'HLT_HIDsPPTrackingGlobal_Dpt30_v1', 'HLT_HIEle10Gsf_v1', 'HLT_HIEle15Ele10GsfMass50_v1', 'HLT_HIFullTracks2018_HighPt18_v1', 'HLT_HIFullTracks2018_HighPt24_v1', 'HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton40_v1', 'HLT_HIIslandPhoton10_Eta3p1_v1', 'HLT_HIIslandPhoton40_Eta3p1_v1', 'HLT_HIPuAK4CaloJet100Eta5p1_v1', 'HLT_HIPuAK4CaloJet100Fwd_v1', 'HLT_HIPuAK4CaloJet40Eta5p1_v1', 'HLT_HIPuAK4CaloJet40Fwd_v1', 'HLT_HIRandom_v1']
+colIndices = [1, 2, 3, 4]
+outputCSV = None
+processing Run 326500, [1, 35]
+processing Run 326501, [1, 294]
+processing Run 326502, [1, 50]
+processing Run 326503, [1, 32]
+### HLT Trigger Counts ###
+Name, L1Pass, PSPass, PAccept
+HLT_HIDmesonPPTrackingGlobal_Dpt15_v1, 18313594, 1318, 29
+HLT_HIDmesonPPTrackingGlobal_Dpt20_v1, 18313594, 407835, 5831
+HLT_HIDmesonPPTrackingGlobal_Dpt30_v1, 18313594, 407835, 2964
+HLT_HIDoubleEle10GsfMass50_v1, 3814469, 3814469, 372
+HLT_HIDoubleEle10Gsf_v1, 3814469, 3814469, 1110
+HLT_HIDsPPTrackingGlobal_Dpt20_v1, 18313594, 407835, 1549
+HLT_HIDsPPTrackingGlobal_Dpt30_v1, 18313594, 407835, 751
+HLT_HIEle10Gsf_v1, 37320629, 1894106, 2597
+HLT_HIEle15Ele10GsfMass50_v1, 3814469, 3814469, 360
+HLT_HIFullTracks2018_HighPt18_v1, 18313594, 407835, 4000
+HLT_HIFullTracks2018_HighPt24_v1, 18313594, 407835, 1496
+HLT_HIGEDPhoton10_v1, 37320629, 23622, 3207
+HLT_HIGEDPhoton40_v1, 1201685, 1201685, 23743
+HLT_HIIslandPhoton10_Eta3p1_v1, 0, 0, 0
+HLT_HIIslandPhoton40_Eta3p1_v1, 0, 0, 0
+HLT_HIPuAK4CaloJet100Eta5p1_v1, 3534640, 3534640, 21299
+HLT_HIPuAK4CaloJet100Fwd_v1, 641031, 641031, 548
+HLT_HIPuAK4CaloJet40Eta5p1_v1, 15711635, 11809, 1603
+HLT_HIPuAK4CaloJet40Fwd_v1, 7671770, 252627, 10562
+HLT_HIRandom_v1, 96070649, 305116, 305116

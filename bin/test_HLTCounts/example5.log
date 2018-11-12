@@ -1,0 +1,42 @@
+Lumi ranges are given in a json file
+Path names are given in a text file
+lumiRanges =
+326390, 1, 11
+326388, 1, 11
+326389, 1, 38
+326381, 52, 114
+326382, 1, 24
+326383, 1, 24
+326384, 17, 38
+pathnames = ['HLT_HIDmesonPPTrackingGlobal_Dpt15_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt20_v1', 'HLT_HIDmesonPPTrackingGlobal_Dpt30_v1', 'HLT_HIDoubleEle10GsfMass50_v1', 'HLT_HIDoubleEle10Gsf_v1', 'HLT_HIDsPPTrackingGlobal_Dpt20_v1', 'HLT_HIDsPPTrackingGlobal_Dpt30_v1', 'HLT_HIEle10Gsf_v1', 'HLT_HIEle15Ele10GsfMass50_v1', 'HLT_HIFullTracks2018_HighPt18_v1', 'HLT_HIFullTracks2018_HighPt24_v1', 'HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton40_v1', 'HLT_HIIslandPhoton10_Eta3p1_v1', 'HLT_HIIslandPhoton40_Eta3p1_v1', 'HLT_HIPuAK4CaloJet100Eta5p1_v1', 'HLT_HIPuAK4CaloJet100Fwd_v1', 'HLT_HIPuAK4CaloJet40Eta5p1_v1', 'HLT_HIPuAK4CaloJet40Fwd_v1', 'HLT_HIRandom_v1']
+colIndices = [2, 3, 1, 4]
+outputCSV = test_HLTCounts/example5.csv
+processing Run 326390, [1, 11]
+processing Run 326388, [1, 11]
+processing Run 326389, [1, 38]
+processing Run 326381, [52, 114]
+processing Run 326382, [1, 24]
+processing Run 326383, [1, 24]
+processing Run 326384, [17, 38]
+### HLT Trigger Counts ###
+L1Pass, PSPass, Name, PAccept
+1459456, 41711, HLT_HIDmesonPPTrackingGlobal_Dpt15_v1, 1156
+1459456, 41711, HLT_HIDmesonPPTrackingGlobal_Dpt20_v1, 814
+1459456, 41711, HLT_HIDmesonPPTrackingGlobal_Dpt30_v1, 427
+306748, 306748, HLT_HIDoubleEle10GsfMass50_v1, 35
+306748, 306748, HLT_HIDoubleEle10Gsf_v1, 82
+1459456, 41711, HLT_HIDsPPTrackingGlobal_Dpt20_v1, 272
+1459456, 41711, HLT_HIDsPPTrackingGlobal_Dpt30_v1, 131
+4750395, 115884, HLT_HIEle10Gsf_v1, 161
+306748, 306748, HLT_HIEle15Ele10GsfMass50_v1, 33
+1459456, 41711, HLT_HIFullTracks2018_HighPt18_v1, 349
+1459456, 41711, HLT_HIFullTracks2018_HighPt24_v1, 125
+4750395, 1521, HLT_HIGEDPhoton10_v1, 218
+95345, 95345, HLT_HIGEDPhoton40_v1, 1917
+4750395, 888, HLT_HIIslandPhoton10_Eta3p1_v1, 205
+95345, 95345, HLT_HIIslandPhoton40_Eta3p1_v1, 22303
+276557, 276557, HLT_HIPuAK4CaloJet100Eta5p1_v1, 1729
+41538, 41538, HLT_HIPuAK4CaloJet100Fwd_v1, 29
+1253328, 455, HLT_HIPuAK4CaloJet40Eta5p1_v1, 58
+605306, 10050, HLT_HIPuAK4CaloJet40Fwd_v1, 415
+8821348, 89112, HLT_HIRandom_v1, 89112

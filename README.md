@@ -158,3 +158,12 @@ The script `runPrintLumiSummaryExamples.sh` under bin/ makes several example cal
   cd bin/
   ./runPrintLumiSummaryExamples.sh
   ```
+
+### Printing HLT counts
+
+The script `runPrintHLTCountsExamples.sh` under bin/ makes several example calls to [printHLTCounts.py](bin/printHLTCounts.py). Simply run the script via
+
+  ```bash
+  cd bin/
+  ./runPrintHLTCountsExamples.sh
+  ```

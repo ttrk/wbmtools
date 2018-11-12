@@ -1,0 +1,16 @@
+No column indices are given. All columns will be shown by default.
+lumiRanges =
+326392
+326499, 32, 44
+326500
+pathnames = ['HLT_HIGEDPhoton10_v1', 'HLT_HIGEDPhoton20_v1', 'HLT_HIGEDPhoton30_v1']
+colIndices = [1, 2, 3, 4]
+outputCSV = None
+processing Run 326392, [0, -1]
+processing Run 326499, [32, 44]
+processing Run 326500, [0, -1]
+### HLT Trigger Counts ###
+Name, L1Pass, PSPass, PAccept
+HLT_HIGEDPhoton10_v1, 19181189, 9126, 1257
+HLT_HIGEDPhoton20_v1, 19181189, 210543, 4352
+HLT_HIGEDPhoton30_v1, 4119374, 2076166, 22697
