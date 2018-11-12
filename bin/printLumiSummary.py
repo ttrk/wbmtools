@@ -4,6 +4,12 @@ def time2sec(str_hhmmss):
     h, m, s = str_hhmmss.split(':')
     return int(h) * 3600 + int(m) * 60 + int(s)
 
+def sec2time(seconds):
+    h = int(seconds/3600)
+    m = int(seconds/60) - h*60
+    s = seconds - (m*60 + h*3600)
+    return "%s:%s:%s" % (h, m, s)
+
 import wbmtools.wbmutil as wbmutil
 from wbmtools.wbmparser import WBMParser
 
@@ -125,6 +131,7 @@ totTime = time2sec(timeArr[1]) - timeBegin
 if totTime < 0 : # rolled over to next day
   totTime = (time2sec("23:59:59") - timeBegin) + (time2sec(timeArr[1]))
 totTime = int(totTime)
+totTimeStr = sec2time(totTime)
 totDelivLumi = delivLumiArr[1] - float(lumiTable[tmpLS][4])
 totLiveLumi = liveLumiArr[1] - float(lumiTable[tmpLS][5])
 # PbPb inelastic cross section = 7.66 barn, from https://arxiv.org/abs/1710.07098
@@ -135,7 +142,7 @@ aveCollRate_Deliv = totColl_Deliv / totTime
 totColl_Record = totLiveLumi * 1000 * xs
 aveCollRate_Record = totColl_Record / totTime
 
-print "Total Time [sec] =",totTime
+print "Total Time = %s = %s sec" % (totTimeStr, totTime)
 print "Total Delivered Lumi [inv mb] =",totDelivLumi
 print "Total Live Lumi [inv mb] =",totLiveLumi
 print "Total Collisions (based on delivered lumi) =",totColl_Deliv
