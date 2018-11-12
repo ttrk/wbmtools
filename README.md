@@ -93,10 +93,10 @@ One last thing, we need the cern CA bundle to verify the WBM certificate. This i
 
 Now once we have an area setup, an example workflow is as follows (note you need an active kerberos ticket)
     
-    source wbmtools/virenv/bin/activate #we now go into our special python env
-    export PYTHON27PATH=$PYTHON27PATH:<full_path_to_wbmtools>
-    export REQUESTS_CA_BUNDLE=$PWD/wbmtools/ca-bundle.crt #if you've copied the ca-bundle.crt here
-    ./wbmtools/bin/printColumnLumis.py 319854 319908 319909 319910 319912
+    cd wbmtools/ # change to base directory of repository
+    source virenv/bin/activate #we now go into our special python env
+    source ./setupEnv.sh
+    ./bin/printColumnLumis.py 319854 319908 319909 319910 319912
     
     
 The output should be:
