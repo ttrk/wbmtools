@@ -1,0 +1,21 @@
+  File "/afs/cern.ch/work/m/mylxplusID/public/wbm/wbmtools/wbmtools/wbmparser.py", line 27, in parse_url_tables
+    parser.feed(self.read_url(url))
+  File "/afs/cern.ch/work/m/mylxplusID/public/wbm/wbmtools/wbmtools/cernssoparser.py", line 52, in read_url
+    self.cookies = cern_sso.krb_sign_on(url)
+  File "/afs/cern.ch/work/m/mylxplusID/public/wbm/wbmtools/virenv/lib/python2.7/site-packages/cern_sso.py", line 131, in krb_sign_on
+    return _finalise_login(s, auth_results=r2)
+  File "/afs/cern.ch/work/m/mylxplusID/public/wbm/wbmtools/virenv/lib/python2.7/site-packages/cern_sso.py", line 90, in _finalise_login
+    r3 = s.post(url=action, data=form_data, timeout=DEFAULT_TIMEOUT_SECONDS)
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/external/py2-requests/2.19.1-ogkkac/lib/python2.7/site-packages/requests/sessions.py", line 559, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/external/py2-requests/2.19.1-ogkkac/lib/python2.7/site-packages/requests/sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/external/py2-requests/2.19.1-ogkkac/lib/python2.7/site-packages/requests/sessions.py", line 644, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/external/py2-requests/2.19.1-ogkkac/lib/python2.7/site-packages/requests/sessions.py", line 222, in resolve_redirects
+    **adapter_kwargs
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/external/py2-requests/2.19.1-ogkkac/lib/python2.7/site-packages/requests/sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc700/external/py2-requests/2.19.1-ogkkac/lib/python2.7/site-packages/requests/adapters.py", line 526, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='cmswbm.cern.ch', port=443): Read timed out. (read timeout=10)
