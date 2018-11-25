@@ -33,6 +33,7 @@ mkdir -p test_HLTCounts/
 
 ## example 5
 # Lumi ranges are in a json file
+# WARNING : If you want to use a json file, then make sure that file name ends with ".json"
 # print all 4 columns, but change their order
 # save the output to a csv file
 # Change the order of columns
