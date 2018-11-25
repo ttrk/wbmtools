@@ -170,4 +170,4 @@ The script `runPrintHLTCountsExamples.sh` under bin/ makes several example calls
 
 ### Avoiding ReadTimeout Exception
 
-Sometimes you can face a ReadTimeout exception. An example error message is given [here](example_ReadTimeout_exception.txt) [1]. This is due to WBM is responding slower than the hard-coded the timeout limit which is set [here] (https://github.com/cerndb/cern-sso-python/blob/f96eb65e602c091aa3d45f6ecb5369f6f6b123d1/cern_sso.py#L21). As a work around, you can increase the default timeout. In particular, modify the file "cern_sso.py" to set DEFAULT_TIMEOUT_SECONDS to a higher value, such as 50.
+Sometimes you can face a ReadTimeout exception. An example error message is given [here](example_ReadTimeout_exception.txt). This is due to WBM is responding slower than the hard-coded the timeout limit which is set [here](https://github.com/cerndb/cern-sso-python/blob/f96eb65e602c091aa3d45f6ecb5369f6f6b123d1/cern_sso.py#L21). As a work around, you can increase the default timeout. In particular, modify the file "cern_sso.py" to set DEFAULT_TIMEOUT_SECONDS to a higher value, such as 50.
