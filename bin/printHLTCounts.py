@@ -46,6 +46,27 @@ for tmp in lumiRangesStr :
     maxLS=int(run_lumis[2])
   lumiRanges.append([run, minLS, maxLS])
 
+# NOTE : It turns out the adjacent lumi sections in DCS only json file are split. Following block merges lumi sections assuming they are adjacent and were split unnecessarily. Comment out the block if need be.
+if args.lumiranges.endswith(".json") :
+  lumiRangesTmp = lumiRanges
+  lumiRanges = []
+  runsTmp = []
+  for row in lumiRangesTmp :
+    run = row[0]
+    if run in runsTmp :
+      continue
+    minLS = 99999
+    maxLS = -1
+    for row2 in lumiRangesTmp :
+      run2 = row2[0]
+      if run2 == run :
+        if row2[1] <= minLS :
+          minLS = row2[1]
+        if row2[2] >= maxLS :
+          maxLS = row2[2]
+    lumiRanges.append([run, minLS, maxLS])
+    runsTmp.append(run)
+
 pathnames = args.pathnames.split(",")
 if len(pathnames) == 1 and pathnames[0].endswith(".txt") :
   print "Path names are given in a text file"
